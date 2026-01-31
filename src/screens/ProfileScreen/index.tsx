@@ -1,9 +1,9 @@
-import {View, Text, TouchableOpacity, Image, ScrollView, StyleSheet, StatusBar} from 'react-native';
+import {View, Text, TouchableOpacity, ScrollView, StyleSheet, StatusBar} from 'react-native';
 import {Settings, User, CreditCard, Shield, HelpCircle, LogOut} from 'lucide-react-native';
 import LinearGradient from 'react-native-linear-gradient';
 import {useFocusEffect} from "@react-navigation/native";
 import {useCallback} from "react";
-import {SafeAreaView} from "react-native-safe-area-context"; // Assuming 'react-native-linear-gradient' is installed for the gradient effect.
+import {SafeAreaView} from "react-native-safe-area-context";
 
 export default function ProfileScreen() {
     useFocusEffect(

@@ -1,5 +1,5 @@
 import {View, Text, TouchableOpacity, StatusBar, ActivityIndicator} from 'react-native';
-import {Rocket, ArrowRight} from 'lucide-react-native';
+import {Rocket} from 'lucide-react-native';
 import {useFocusEffect, useNavigation} from '@react-navigation/native';
 import {useCallback} from "react";
 

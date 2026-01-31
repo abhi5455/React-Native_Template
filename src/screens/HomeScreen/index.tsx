@@ -1,6 +1,5 @@
 import {View, Text, ScrollView, TouchableOpacity, StatusBar} from 'react-native';
 import {
-    Home,
     Bell,
     Search,
     ArrowRight,
@@ -13,17 +12,16 @@ import {
     PlusCircle,
     Compass,
     MessageSquare,
-    Sparkles, // For Gradient Library
-    MessageSquareText, // For Toast Notifications
-    ChevronRight,
+    Sparkles,
+    MessageSquareText,
 } from 'lucide-react-native';
 import {useFocusEffect} from "@react-navigation/native";
 import {useCallback} from "react";
 import {SafeAreaView} from "react-native-safe-area-context";
-import { useNavigation } from '@react-navigation/native'; // Added useNavigation
+import { useNavigation } from '@react-navigation/native';
 
 export default function HomeScreen() {
-    const navigation = useNavigation(); // Initialized useNavigation
+    const navigation = useNavigation();
 
     useFocusEffect(
         useCallback(() => {
@@ -43,7 +41,7 @@ export default function HomeScreen() {
             icon: <LayoutGrid size={22} color="#0891b2" />,
             title: "Tab Navigator",
             subtitle: "Effortless bottom tab navigation.",
-            action: () => navigation.navigate('Profile' as never) // Example action
+            action: () => navigation.navigate('Profile' as never)
         },
         {
             icon: <ScreenShare size={22} color="#0891b2" />,
