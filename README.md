@@ -41,7 +41,7 @@ Follow these steps to get your project up and running.
 
 1.  **Clone the template**:
     ```bash
-    git clone https://github.com/your-username/react-native-template.git YourProjectName
+    git clone https://github.com/abhi5455/React-Native_Template.git YourProjectName
     cd YourProjectName
     ```
 
