@@ -87,7 +87,7 @@ export default function HomeScreen() {
                 <View className="px-6 pt-5 pb-8">
                     <View className="flex-row items-center justify-between mb-8">
                         <View>
-                            <Text className="text-gray-500 text-sm">Welcome back</Text>
+                            <Text className="text-[#0891b2] text-sm">Welcome back</Text>
                             <Text className="text-gray-800 text-2xl font-bold">Explorer</Text>
                         </View>
                         <View className="flex-row gap-4">
