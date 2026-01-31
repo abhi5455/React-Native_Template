@@ -62,7 +62,7 @@ export default function ProfileScreen() {
 
 const ProfileStat = ({value, label, last}: { value: string; label: string; last?: boolean }) => (
     <View className={`flex-row items-center justify-between py-3 ${!last ? 'border-b border-gray-200' : ''}`}>
-        <Text className="text-gray-500">{label}</Text>
+        <Text className="text-gray-700">{label}</Text>
         <Text className="text-gray-800 font-semibold">{value}</Text>
     </View>
 );
@@ -70,6 +70,6 @@ const ProfileStat = ({value, label, last}: { value: string; label: string; last?
 const MenuItem = ({icon: Icon, text}: { icon: any; text: string }) => (
     <TouchableOpacity className="bg-white rounded-2xl p-4 flex-row items-center mb-3 shadow-sm">
         <Icon size={22} color="#0891b2"/>
-        <Text className="text-gray-800 text-base ml-4">{text}</Text>
+        <Text className="text-black text-[15px] ml-4">{text}</Text>
     </TouchableOpacity>
 );
