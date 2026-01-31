@@ -10,13 +10,19 @@ const TabNavigator = () => {
     return (
         <Tab.Navigator
             screenOptions={{
-                tabBarActiveTintColor: '#2196F3',
-                tabBarInactiveTintColor: 'gray',
+                tabBarActiveTintColor: '#0891b2', // cyan-600
+                tabBarInactiveTintColor: '#a1a1aa', // gray-400
                 headerShown: false,
                 tabBarStyle: {
-                    backgroundColor: '#09090b', // zinc-950
-                    borderTopColor: '#09090b',
+                    backgroundColor: '#fff',
+                    borderTopColor: '#e5e7eb', // border-gray-200
+                    height: 60,
+                    paddingVertical: 5,
                 },
+                tabBarLabelStyle: {
+                    fontSize: 12,
+                    fontWeight: '600',
+                }
             }}
         >
             <Tab.Screen

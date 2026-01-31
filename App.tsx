@@ -9,7 +9,7 @@ import {toastConfig} from "./toast.config";
 export default function App() {
     return (
         <GestureHandlerRootView style={{flex: 1}}>
-            <SafeAreaView className="flex-1">
+            <SafeAreaView className="flex-1 bg-gray-50">
                 <NavigationContainer>
                     <StackNavigator/>
                     <Toast config={toastConfig}/>

@@ -9,7 +9,7 @@ A minimal, stylish React Native CLI template with navigation, styling, and icons
 - 🎨 **NativeWind** - TailwindCSS for React Native
 - 🔷 **Lucide Icons** - Beautiful & consistent icons
 - 📱 **TypeScript** - Type-safe development
-- 🌙 **Dark Theme** - Modern dark UI out of the box
+- ☀️ **Light Theme** - Clean and elegant light UI
 
 ## 📦 Included Libraries
 
@@ -39,3 +39,6 @@ npm run ios
 
 # Run on Android
 npm run android
+```
+
+**Note:** This template now uses a light theme by default. The UI has been completely refreshed for a clean and modern look.
