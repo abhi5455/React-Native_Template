@@ -84,8 +84,8 @@ export default function HomeScreen() {
     return (
         <SafeAreaView className="flex-1 bg-gray-100">
             <ScrollView className="flex-1 bg-gray-50">
-                <View className="px-6 pt-5 pb-8">
-                    <View className="flex-row items-center justify-between mb-8">
+                <View className="px-5 pt-5 pb-8">
+                    <View className="flex-row items-center justify-between mb-8 mx-1">
                         <View>
                             <Text className="text-[#0891b2] text-sm">Welcome back</Text>
                             <Text className="text-gray-800 text-2xl font-bold">Explorer</Text>
@@ -100,7 +100,7 @@ export default function HomeScreen() {
                         </View>
                     </View>
 
-                    <View className="bg-cyan-600 rounded-3xl p-6 mb-8 shadow-lg shadow-cyan-400/50">
+                    <View className="bg-cyan-600 rounded-3xl p-6 mb-8 shadow-lg shadow-cyan-400/50 mx-1">
                         <View className="bg-white/20 self-start px-3 py-1 rounded-full mb-4">
                             <Text className="text-white text-xs font-medium">Quick Start Template</Text>
                         </View>
@@ -114,7 +114,7 @@ export default function HomeScreen() {
                         </TouchableOpacity>
                     </View>
 
-                    <View className="mb-8">
+                    <View className="mb-8 mx-1">
                         <Text className="text-gray-800 text-lg font-semibold mb-4">Quick Actions</Text>
                         <View className="flex-row justify-around">
                             <QuickActionButton icon={PlusCircle} label="New Project" />
@@ -123,11 +123,11 @@ export default function HomeScreen() {
                         </View>
                     </View>
 
-                    <Text className="text-gray-800 text-lg font-semibold mb-4">Features Included</Text>
+                    <Text className="text-gray-800 text-lg font-semibold mb-4 mx-1">Features Included</Text>
                     <View className="flex flex-col gap-3 py-4">
                         {features.map((item, index) => (
                             <TouchableOpacity
-                                className={`flex bg-white rounded-2xl flex-row items-center justify-between py-5 shadow-md ${index < features.length - 1 ? 'border-b border-gray-100' : ''}`}
+                                className={`flex bg-white rounded-2xl flex-row items-center justify-between py-5 px-1 shadow-md ${index < features.length - 1 ? 'border-b border-gray-100' : ''}`}
                                 key={index}
                                 onPress={item?.action}>
                                 <View className="flex flex-row items-center gap-4">

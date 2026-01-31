@@ -16,8 +16,8 @@ const TabNavigator = () => {
                 tabBarStyle: {
                     backgroundColor: '#fff',
                     borderTopColor: '#e5e7eb', // border-gray-200
-                    height: 60,
-                    paddingVertical: 5,
+                    height: 62,
+                    paddingTop: 3,
                 },
                 tabBarLabelStyle: {
                     fontSize: 12,
@@ -28,12 +28,12 @@ const TabNavigator = () => {
             <Tab.Screen
                 name="Home"
                 component={HomeScreen}
-                options={{tabBarIcon: ({color, size}) => <Home size={size} color={color} />}}
+                options={{tabBarIcon: ({color, size}) => <Home size={size} color={color} strokeWidth={1.6}/>}}
             />
             <Tab.Screen
                 name="Profile"
                 component={ProfileScreen}
-                options={{tabBarIcon: ({color, size}) => <User size={size} color={color} />}}
+                options={{tabBarIcon: ({color, size}) => <User size={size} color={color} strokeWidth={1.6}/>}}
             />
         </Tab.Navigator>
     );
